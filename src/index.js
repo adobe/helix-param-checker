@@ -1,5 +1,5 @@
 /*
- * Copyright 2019 Adobe. All rights reserved.
+ * Copyright 2020 Adobe. All rights reserved.
  * This file is licensed to you under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License. You may obtain a copy
  * of the License at http://www.apache.org/licenses/LICENSE-2.0
@@ -9,24 +9,44 @@
  * OF ANY KIND, either express or implied. See the License for the specific language
  * governing permissions and limitations under the License.
  */
-const { wrap } = require('@adobe/openwhisk-action-utils');
+
+/* eslint-disable no-param-reassign */
+
+'use strict';
+
+const crypto = require('crypto');
 const { logger } = require('@adobe/openwhisk-action-logger');
-const { wrap: status } = require('@adobe/helix-status');
-const { epsagon } = require('@adobe/helix-epsagon');
+const { wrap } = require('@adobe/openwhisk-action-utils');
+const statusWrap = require('@adobe/helix-status').wrap;
 
 /**
- * This is the main function
- * @param {string} name name of the person to greet
- * @returns {object} a greeting
+ * Runtime action.
+ *
+ * @param {Object} params parameters
  */
-function main({ name = 'world' }) {
+async function run(params) {
+  const uppercaseParams = Object.keys(params)
+    .sort()
+    .filter((name) => name.match(/[A-Z][A-Z0-9-_]*/))
+    .reduce((obj, name) => {
+      obj[name] = params[name];
+      return obj;
+    }, {});
+  const hash = crypto.createHash('sha256')
+    .update(JSON.stringify(uppercaseParams))
+    .digest('hex');
+
   return {
-    body: `Hello, ${name}.`,
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    statusCode: 200,
+    body: {
+      hash,
+    },
   };
 }
 
-module.exports.main = wrap(main)
-  .with(epsagon)
-  .with(status)
-  .with(logger.trace)
-  .with(logger);
+module.exports.main = wrap(run)
+  .with(logger)
+  .with(statusWrap);

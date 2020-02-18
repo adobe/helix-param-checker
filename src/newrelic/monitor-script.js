@@ -9,15 +9,24 @@
  * OF ANY KIND, either express or implied. See the License for the specific language
  * governing permissions and limitations under the License.
  */
+/* global $http $util $secure Buffer */
 
-/* eslint-env mocha */
 const assert = require('assert');
 
-describe('Post-Deploy Tests', () => {
-  it('Service is ready for monitoring', () => {
-    assert.equal(
-      'Not yet, but I will change this line as soon as I am ready',
-      'I am ready to go on call for this',
-    );
-  });
-});
+$http.post({
+    url: '$$$URL$$$',
+    headers: {
+      Authorization: `Basic ${Buffer.from($secure.WSK_AUTH_$$$NS$$$).toString('base64')}`,
+    },
+    json: true,
+  },
+  // Callback
+  function (err, response, body) {
+    if (err) {
+      $util.insights.set('error', err);
+      console.error(err);
+    }
+    assert.equal(response.statusCode, 200, `Expected a 200 OK response, got: ${response.statusCode}`);
+    assert.equal(body.hash, $secure.WSK_PARAM_HASH_HELIX, `SHA256 of parameters does not match, got: ${body.hash}`);
+  }
+);

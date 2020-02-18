@@ -15,16 +15,19 @@
 'use strict';
 
 const assert = require('assert');
-const index = require('../src/index.js').main;
+const crypto = require('crypto');
 
-describe('Index Tests', () => {
-  it('index function is present', async () => {
-    const result = await index({});
-    assert.deepEqual(result, { body: 'Hello, world.' });
-  });
+const action = require('../src/index.js');
 
-  it('index function returns an object', async () => {
-    const result = await index();
-    assert.equal(typeof result, 'object');
+describe('Hash Tests', () => {
+  it('Assert hash returns the same value', async () => {
+    const params = {
+      B: '2', c: '3', A: 1,
+    };
+    const hash = crypto.createHash('sha256')
+      .update(JSON.stringify({ A: 1, B: '2' }))
+      .digest('hex');
+    const response = await action.main(params);
+    assert.equal(response.body.hash, hash);
   });
 });

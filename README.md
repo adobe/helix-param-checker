@@ -1,21 +1,21 @@
-# Helix Service
+# Helix Parameter Checker
 
-> An example service to be used in and with Project Helix
+> Returns a SHA256 of the package parameters
 
 ## Status
-[![codecov](https://img.shields.io/codecov/c/github/adobe/helix-service.svg)](https://codecov.io/gh/adobe/helix-service)
-[![CircleCI](https://img.shields.io/circleci/project/github/adobe/helix-service.svg)](https://circleci.com/gh/adobe/helix-service)
-[![GitHub license](https://img.shields.io/github/license/adobe/helix-service.svg)](https://github.com/adobe/helix-service/blob/master/LICENSE.txt)
-[![GitHub issues](https://img.shields.io/github/issues/adobe/helix-service.svg)](https://github.com/adobe/helix-service/issues)
-[![LGTM Code Quality Grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/g/adobe/helix-service.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/adobe/helix-service)
-[![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release) [![Greenkeeper badge](https://badges.greenkeeper.io/adobe/helix-service.svg)](https://greenkeeper.io/)
+[![codecov](https://img.shields.io/codecov/c/github/adobe/helix-param-checker.svg)](https://codecov.io/gh/adobe/helix-param-checker)
+[![CircleCI](https://img.shields.io/circleci/project/github/adobe/helix-param-checker.svg)](https://circleci.com/gh/adobe/helix-param-checker)
+[![GitHub license](https://img.shields.io/github/license/adobe/helix-param-checker.svg)](https://github.com/adobe/helix-param-checker/blob/master/LICENSE.txt)
+[![GitHub issues](https://img.shields.io/github/issues/adobe/helix-param-checker.svg)](https://github.com/adobe/helix-param-checker/issues)
+[![LGTM Code Quality Grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/g/adobe/helix-param-checker.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/adobe/helix-param-checker)
+[![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release) [![Greenkeeper badge](https://badges.greenkeeper.io/adobe/helix-param-checker.svg)](https://greenkeeper.io/)
 
 ## Installation
 
 ## Usage
 
 ```bash
-curl https://adobeioruntime.net/api/v1/web/helix/helix-services/service@v1
+curl https://adobeioruntime.net/api/v1/web/helix/helix-services/param-checkerv1
 ```
 
 For more, see the [API documentation](docs/API.md).
