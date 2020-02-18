@@ -10,8 +10,6 @@
  * governing permissions and limitations under the License.
  */
 
-/* eslint-disable no-param-reassign */
-
 'use strict';
 
 const crypto = require('crypto');
@@ -29,6 +27,7 @@ async function run(params) {
     .sort()
     .filter((name) => name.match(/[A-Z][A-Z0-9-_]*/))
     .reduce((obj, name) => {
+      // eslint-disable-next-line no-param-reassign
       obj[name] = params[name];
       return obj;
     }, {});
