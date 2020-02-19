@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/adobe/helix-param-checker/compare/v1.0.0...v1.0.1) (2020-02-19)
+
+
+### Bug Fixes
+
+* **monitoring:** enable parameter checker ([439ad3b](https://github.com/adobe/helix-param-checker/commit/439ad3befdb690288176c58932a81bbbcc6ac678))
+
 # 1.0.0 (2020-02-19)
 
 
