@@ -1,12 +1,11 @@
 <a name="main"></a>
 
-## main(name) ⇒ <code>string</code>
+## main() ⇒ <code>string</code>
 This is the main function
 
 **Kind**: global function  
-**Returns**: <code>string</code> - a greeting  
+**Returns**: <code>string</code> - a SHA256 hash code, of all uppercase parameters and their values
 
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
-| name | <code>string</code> | <code>&quot;world&quot;</code> | name of the person to greet |
 
