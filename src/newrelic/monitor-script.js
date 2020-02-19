@@ -9,15 +9,12 @@
  * OF ANY KIND, either express or implied. See the License for the specific language
  * governing permissions and limitations under the License.
  */
-/* global $http $util $secure Buffer */
+/* global $http $util $secure */
 
 const assert = require('assert');
 
 $http.post({
     url: '$$$URL$$$',
-    headers: {
-      Authorization: `Basic ${Buffer.from($secure.WSK_AUTH_$$$NS$$$).toString('base64')}`,
-    },
     json: true,
   },
   // Callback
