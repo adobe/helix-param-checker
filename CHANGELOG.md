@@ -1,3 +1,10 @@
+## [1.0.3](https://github.com/adobe/helix-param-checker/compare/v1.0.2...v1.0.3) (2020-02-19)
+
+
+### Bug Fixes
+
+* **monitor:** remove unneeded auth headers ([48c904d](https://github.com/adobe/helix-param-checker/commit/48c904d5a007f52a43670df06e945476d09622d9))
+
 ## [1.0.2](https://github.com/adobe/helix-param-checker/compare/v1.0.1...v1.0.2) (2020-02-19)
 
 
