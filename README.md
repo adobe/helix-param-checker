@@ -1,6 +1,6 @@
 # Helix Parameter Checker
 
-> Returns a SHA256 of the package parameters
+> Computes a SHA256 of all package parameter whose names are uppercase, which are usually reserved for secrets. This can be used to setup a monitoring job that checks whether an OpenWhisk credential update has been applied globally in all regions.
 
 ## Status
 [![codecov](https://img.shields.io/codecov/c/github/adobe/helix-param-checker.svg)](https://codecov.io/gh/adobe/helix-param-checker)
@@ -15,7 +15,7 @@
 ## Usage
 
 ```bash
-curl https://adobeioruntime.net/api/v1/web/helix/helix-services/param-checkerv1
+curl https://adobeioruntime.net/api/v1/web/helix/helix-services/param-checker@v1
 ```
 
 For more, see the [API documentation](docs/API.md).
