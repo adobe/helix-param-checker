@@ -1,6 +1,6 @@
 # Helix Parameter Checker
 
-> Computes a SHA256 of all package parameter whose names are uppercase, which are usually reserved for secrets. This can be used to setup a monitoring job that checks whether an OpenWhisk credential update has been applied globally in all regions.
+> Computes a SHA256 of all package parameter whose names are uppercase, which are usually reserved for secrets. This can be used to setup a monitoring job that checks whether an OpenWhisk credential update has been applied consistently in all regions.
 
 ## Status
 [![codecov](https://img.shields.io/codecov/c/github/adobe/helix-param-checker.svg)](https://codecov.io/gh/adobe/helix-param-checker)
