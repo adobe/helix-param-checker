@@ -1,3 +1,13 @@
+# 1.0.0 (2020-02-19)
+
+
+### Bug Fixes
+
+* move eslint ignore to line ([cec3289](https://github.com/adobe/helix-param-checker/commit/cec3289a7ab5fcc21829214a586a16c419ecec58))
+* remove context ([32b779c](https://github.com/adobe/helix-param-checker/commit/32b779c6adf7cf80346896644bb429ec5589665a))
+* **circleci:** add context to semantic-release job ([8572dc9](https://github.com/adobe/helix-param-checker/commit/8572dc98c6242aa7d6b3818e3d2b732548359cad))
+* **deps:** pin dependency @adobe/helix-status to 7.1.1 ([8089013](https://github.com/adobe/helix-param-checker/commit/8089013ed2cf74d034e39d369589d694a5dbfece))
+
 ## [1.6.10](https://github.com/adobe/helix-service/compare/v1.6.9...v1.6.10) (2020-02-03)
 
 
