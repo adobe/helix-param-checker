@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/adobe/helix-param-checker/compare/v1.0.1...v1.0.2) (2020-02-19)
+
+
+### Bug Fixes
+
+* **circleci:** make path relative to checkout ([e4610fa](https://github.com/adobe/helix-param-checker/commit/e4610fa5bf023ae2ce5a5769bf67272c36affdf5))
+
 ## [1.0.1](https://github.com/adobe/helix-param-checker/compare/v1.0.0...v1.0.1) (2020-02-19)
 
 
