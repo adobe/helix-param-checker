@@ -18,8 +18,7 @@
     "deploy-ci": "wsk-builder -v --deploy --test=/_status_check/pingdom.xml --pkgVersion=ci$CIRCLE_BUILD_NUM -l ci"
   },
   "wsk": {
-    "name": "helix-services-private/param-checker@${version}",
-    "linksPackage": "helix-services"
+    "name": "helix-services/param-checker@${version}"
   },
   "repository": {
     "type": "git",
