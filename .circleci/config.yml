@@ -31,6 +31,12 @@ commands:
           name: prepare test git user
           command: git config --global user.email "circleci@example.com" && git config --global user.name "CircleCi Build"
 
+  config-wsk-index:
+    description: Sets the OpenWhisk properties
+    steps:
+      - run:
+          name: Configure OpenWhisk (index)
+          command: echo -e "APIHOST=https://adobeioruntime.net\nNAMESPACE=helix-index\nAUTH=$WSK_AUTH_INDEX\n" > ~/.wskprops
 jobs:
   build:
     executor: node10
@@ -67,6 +73,13 @@ jobs:
           path: junit
       - run:
           name: Link Sequences
+          command: npm run deploy-sequences
+      - config-wsk-index
+      - run:
+          name: Deploy (index)
+          command: npm run deploy
+      - run:
+          name: Link Sequences (index)
           command: npm run deploy-sequences
       - helix-post-deploy/monitoring:
           newrelic_group_policy: Development Repeated Failure
