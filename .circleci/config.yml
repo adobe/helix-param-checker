@@ -37,6 +37,9 @@ commands:
       - run:
           name: Configure OpenWhisk (index)
           command: echo -e "APIHOST=https://adobeioruntime.net\nNAMESPACE=helix-index\nAUTH=$WSK_AUTH_INDEX\n" > ~/.wskprops
+      - run:
+          # this is required because in the action builder env vars have precedence over wskprops
+          command: export WSK_AUTH="$WSK_AUTH_INDEX"
 jobs:
   build:
     executor: node10
