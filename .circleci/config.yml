@@ -31,15 +31,6 @@ commands:
           name: prepare test git user
           command: git config --global user.email "circleci@example.com" && git config --global user.name "CircleCi Build"
 
-  config-wsk-index:
-    description: Sets the OpenWhisk properties
-    steps:
-      - run:
-          name: Configure OpenWhisk (index)
-          command: echo -e "APIHOST=https://adobeioruntime.net\nNAMESPACE=helix-index\nAUTH=$WSK_AUTH_INDEX\n" > ~/.wskprops
-      - run:
-          # this is required because in the action builder env vars have precedence over wskprops
-          command: export WSK_AUTH="$WSK_AUTH_INDEX"
 jobs:
   build:
     executor: node10
@@ -77,7 +68,9 @@ jobs:
       - run:
           name: Link Sequences
           command: npm run deploy-sequences
-      - config-wsk-index
+      - run:
+          name: Setup helix-index
+          command: echo -e "WSK_NAMESPACE=helix-index\nWSK_AUTH=$WSK_AUTH_INDEX\n" > .env
       - run:
           name: Deploy (index)
           command: npm run deploy
