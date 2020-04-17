@@ -70,7 +70,7 @@ jobs:
           command: npm run deploy-sequences
       - run:
           name: Setup helix-index
-          command: echo -e "WSK_NAMESPACE=helix-index\nWSK_AUTH=$WSK_AUTH_INDEX\n" > .env
+          command: echo -e "WSK_NAMESPACE=helix-index\nWSK_AUTH=$WSK_AUTH_INDEX\n" > .env && unset WSK_AUTH
       - run:
           name: Deploy (index)
           command: npm run deploy
