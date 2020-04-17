@@ -1,3 +1,10 @@
+## [1.0.15](https://github.com/adobe/helix-param-checker/compare/v1.0.14...v1.0.15) (2020-04-17)
+
+
+### Bug Fixes
+
+* **ci:** also deploy to index ([5d9ea67](https://github.com/adobe/helix-param-checker/commit/5d9ea671b40b95b07dcf79845c94e8d92501a37e))
+
 ## [1.0.14](https://github.com/adobe/helix-param-checker/compare/v1.0.13...v1.0.14) (2020-04-17)
 
 
