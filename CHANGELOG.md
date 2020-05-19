@@ -1,3 +1,10 @@
+## [1.0.19](https://github.com/adobe/helix-param-checker/compare/v1.0.18...v1.0.19) (2020-05-19)
+
+
+### Bug Fixes
+
+* **deps:** update dependency yaml to v1.10.0 ([#55](https://github.com/adobe/helix-param-checker/issues/55)) ([7d2352a](https://github.com/adobe/helix-param-checker/commit/7d2352a0e2cf3679eafd86f695dbb2cf2fde2942))
+
 ## [1.0.18](https://github.com/adobe/helix-param-checker/compare/v1.0.17...v1.0.18) (2020-04-20)
 
 
