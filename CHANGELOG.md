@@ -1,3 +1,10 @@
+## [1.0.21](https://github.com/adobe/helix-param-checker/compare/v1.0.20...v1.0.21) (2020-06-29)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @adobe/openwhisk-action-utils to v4.2.3 ([#72](https://github.com/adobe/helix-param-checker/issues/72)) ([977d6cd](https://github.com/adobe/helix-param-checker/commit/977d6cda0309092964c1dbca4f39d71ace6bbd11))
+
 ## [1.0.20](https://github.com/adobe/helix-param-checker/compare/v1.0.19...v1.0.20) (2020-06-16)
 
 
