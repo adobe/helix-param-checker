@@ -1,3 +1,10 @@
+## [1.0.25](https://github.com/adobe/helix-param-checker/compare/v1.0.24...v1.0.25) (2020-07-08)
+
+
+### Bug Fixes
+
+* **circleci:** remove deployment to helix-index and newrelic_url ([#83](https://github.com/adobe/helix-param-checker/issues/83)) ([82310b3](https://github.com/adobe/helix-param-checker/commit/82310b32ac1d2b8a0c80195515b6600857b098c0))
+
 ## [1.0.24](https://github.com/adobe/helix-param-checker/compare/v1.0.23...v1.0.24) (2020-07-07)
 
 
