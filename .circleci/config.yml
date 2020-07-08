@@ -71,6 +71,7 @@ jobs:
       - helix-post-deploy/monitoring:
           newrelic_group_policy: Development Repeated Failure
           newrelic_script: ./src/newrelic/monitor-script.js
+          newrelic_url: https://adobeioruntime.net/api/v1/web/helix/helix-services/param-checker@latest
           statuspage_name: Helix Parameter Checker
           statuspage_group: Development
 
