@@ -1,3 +1,10 @@
+## [1.0.26](https://github.com/adobe/helix-param-checker/compare/v1.0.25...v1.0.26) (2020-07-08)
+
+
+### Bug Fixes
+
+* add rewrelic_url back (not the same as health_check) ([bef525c](https://github.com/adobe/helix-param-checker/commit/bef525cfd5a314cf01c6c4b74a1f6fad8bb7cb55))
+
 ## [1.0.25](https://github.com/adobe/helix-param-checker/compare/v1.0.24...v1.0.25) (2020-07-08)
 
 
