@@ -1,3 +1,10 @@
+## [1.0.28](https://github.com/adobe/helix-param-checker/compare/v1.0.27...v1.0.28) (2020-07-23)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @adobe/helix-status to v8.1.2 ([#91](https://github.com/adobe/helix-param-checker/issues/91)) ([acd05db](https://github.com/adobe/helix-param-checker/commit/acd05dbe13e981e5102b14ec31957235b7b7fa97))
+
 ## [1.0.27](https://github.com/adobe/helix-param-checker/compare/v1.0.26...v1.0.27) (2020-07-21)
 
 
