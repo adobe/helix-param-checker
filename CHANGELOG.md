@@ -1,3 +1,10 @@
+## [1.0.30](https://github.com/adobe/helix-param-checker/compare/v1.0.29...v1.0.30) (2020-08-31)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @adobe/helix-testutils to v0.4.1 ([#103](https://github.com/adobe/helix-param-checker/issues/103)) ([4d96c5f](https://github.com/adobe/helix-param-checker/commit/4d96c5f5e7bd8e637f4bb89734dc5ac83c72573b))
+
 ## [1.0.29](https://github.com/adobe/helix-param-checker/compare/v1.0.28...v1.0.29) (2020-08-11)
 
 
