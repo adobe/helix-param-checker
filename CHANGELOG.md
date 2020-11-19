@@ -1,3 +1,10 @@
+## [1.0.36](https://github.com/adobe/helix-param-checker/compare/v1.0.35...v1.0.36) (2020-11-19)
+
+
+### Bug Fixes
+
+* **deps:** update adobe fixes ([#126](https://github.com/adobe/helix-param-checker/issues/126)) ([140f0aa](https://github.com/adobe/helix-param-checker/commit/140f0aa90a5cf75a5f827802a4ea22d12230fa45))
+
 ## [1.0.35](https://github.com/adobe/helix-param-checker/compare/v1.0.34...v1.0.35) (2020-10-12)
 
 
