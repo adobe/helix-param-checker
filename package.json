@@ -33,8 +33,8 @@
   "dependencies": {
     "@adobe/helix-status": "8.2.1",
     "@adobe/helix-testutils": "0.4.1",
-    "@adobe/openwhisk-action-logger": "2.2.1",
-    "@adobe/openwhisk-action-utils": "4.3.1",
+    "@adobe/openwhisk-action-logger": "2.2.2",
+    "@adobe/openwhisk-action-utils": "4.3.2",
     "openwhisk": "3.21.3",
     "request": "2.88.2",
     "request-promise-native": "1.0.9",
