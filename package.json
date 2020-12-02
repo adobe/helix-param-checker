@@ -1,6 +1,6 @@
 {
   "name": "@adobe/helix-param-checker",
-  "version": "1.0.37",
+  "version": "1.0.38",
   "private": true,
   "description": "Helix Package Parameter Checker",
   "main": "src/index.js",
