@@ -1,3 +1,10 @@
+## [1.0.43](https://github.com/adobe/helix-param-checker/compare/v1.0.42...v1.0.43) (2020-12-25)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @adobe/openwhisk-action-logger to v2.3.1 ([#136](https://github.com/adobe/helix-param-checker/issues/136)) ([9431239](https://github.com/adobe/helix-param-checker/commit/94312396fc8133a93c7936b12eeb88dad7d8360a))
+
 ## [1.0.42](https://github.com/adobe/helix-param-checker/compare/v1.0.41...v1.0.42) (2020-12-17)
 
 
